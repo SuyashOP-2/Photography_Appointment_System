@@ -1,5 +1,4 @@
-let url = "https://erin-shiny-lizard.cyclic.app/";
-// let url = "https://localhost:4500/"
+let url = "https://localhost:4500/"
 
 const id = JSON.parse(localStorage.getItem("user")).id;
 const token = JSON.parse(localStorage.getItem("token"));
@@ -29,7 +28,6 @@ function closeProfileForm() {
 }
 
 // ========================= FETCH DATA ========================
-
 // let day = {
 //   0: "Mon",
 //   1: "Tue",

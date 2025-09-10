@@ -12,8 +12,6 @@ const { AppointmentModel } = require('../models/Appoinment.model');
 const{default: mongoose}= require("mongoose");
 const userRouter = express.Router();
 
-
-
 userRouter.post('/signup', async (req, res) => {
     const { name, mobile, password } = req.body;
     try {

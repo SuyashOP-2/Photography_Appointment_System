@@ -31,13 +31,13 @@ app.listen(process.env.PORT, async () => {
         console.log('Cannot connect to DB');
         return;
     }
-    try {
-        await redisClient.connect();
-        console.log('Connected to Redis');
-    } catch (error) {
-        console.log(error.message);
-        console.log('Cannot connect to Redis');
-        return;
-    }
+    // try {
+    //     await redisClient.connect();
+    //     console.log('Connected to Redis');
+    // } catch (error) {
+    //     console.log(error.message);
+    //     console.log('Cannot connect to Redis');
+    //     return;
+    // }
     console.log(`Server is running on port ${process.env.PORT}`);
 })

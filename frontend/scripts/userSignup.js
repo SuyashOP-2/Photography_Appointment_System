@@ -17,7 +17,7 @@ document.querySelector("form").addEventListener("submit", register);
         password,
         };
 
-        let regurl = "https://erin-shiny-lizard.cyclic.app/users/signup";
+        let regurl = "http://localhost:4500/users/signup";
 
         let res = await fetch(regurl, {
         method: "POST",

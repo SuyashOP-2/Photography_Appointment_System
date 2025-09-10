@@ -42,7 +42,7 @@ async function register(event) {
 
       console.log(regdata)
 
-      let regurl = "https://erin-shiny-lizard.cyclic.app/studios/signup";
+      let regurl = "http://localhost:4500/studios/signup";
 
       let res = await fetch(regurl, {
       method: "POST",

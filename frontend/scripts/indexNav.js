@@ -21,7 +21,7 @@ if(isLoggedIn){
   </div>
   
  <div class="part2">
-     <p>${localStorage.getItem("userName")}</p>
+     <p>${localStorage?.getItem("userName")}</p>
       <button id="logout-button">Logout</button>
   </div>
 </div>`;

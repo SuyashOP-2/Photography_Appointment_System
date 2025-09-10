@@ -5,7 +5,7 @@ const date_filter = document.querySelector('#date-filter')
 const token = localStorage.getItem('token')
 
 let arr = [];
-const baseURL = 'https://erin-shiny-lizard.cyclic.app';
+const baseURL = "http://localhost:4500/";
 
 
 async function fetchAppointments() {

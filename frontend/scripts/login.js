@@ -1,4 +1,3 @@
-
 document.querySelector("form").addEventListener("submit", login);
 
 async function login(event) {
@@ -13,10 +12,9 @@ async function login(event) {
       password,
     };
 
-    console.log(role)
+    console.log(role);
 
-
-    let logurl = `https://erin-shiny-lizard.cyclic.app/${role}/login`;
+    let logurl = `http://localhost:4500/${role}/login`;
 
     let res = await fetch(logurl, {
       method: "POST",
@@ -28,18 +26,18 @@ async function login(event) {
     let data = await res.json();
     if (res.ok) {
       // Store the access token in the session storage
-      console.log(data.user)
-      localStorage.setItem('token', data.token);
-      localStorage.setItem('user', JSON.stringify(data.user));
-      localStorage.setItem('role', role);
-      localStorage.setItem('userName', data.user.name);
+      console.log(data);
+      console.log(data?.user);
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("user", JSON.stringify(data.user));
+      localStorage.setItem("role", role);
+      localStorage.setItem("userName", data?.user?.name);
 
       alert(data.message);
       window.location = "../index.html";
     } else {
       alert(data.message);
     }
-
   } catch (err) {
     console.log("err", err);
     alert(data.message);

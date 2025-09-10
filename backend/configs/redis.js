@@ -1,14 +1,14 @@
-const redis = require('redis')
-require('dotenv').config()
+// const redis = require('redis')
+// require('dotenv').config()
 
-const redisClient = redis.createClient({
-    password: process.env.redisPass,
-    socket: {
-        host: process.env.redisHost,
-        port: process.env.redisPort
-    }
-});
+// const redisClient = redis.createClient({
+//     password: process.env.redisPass,
+//     socket: {
+//         host: process.env.redisHost,
+//         port: process.env.redisPort
+//     }
+// });
 
-module.exports = {
-    redisClient
-}
+// module.exports = {
+//     redisClient
+// }
